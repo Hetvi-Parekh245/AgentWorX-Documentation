@@ -2,7 +2,7 @@
 
 Workspace Chat is where you actually interact with your workspace — asking questions, uploading documents on the fly, referencing your documents, and getting answers from the agents attached to that workspace. You can also switch AI models mid-conversation without losing your thread's context.
 
-![Workspace chat view](../assets/workspace-chat-launched.png)
+![Workspace chat view](./assets/workspace-chat-launched.png)
 
 ## Short Description
 
@@ -24,7 +24,7 @@ Use Workspace Chat whenever you need to:
 | **New Thread** | Starts a fresh, separate conversation within the workspace |
 | **Thread list** | Lets you switch between past conversations (the default thread is named **Default**) |
 | **Agent selector** (bottom of chat box) | Choose which attached agent should respond in this thread, if more than one is available |
-| **Upload a document** link | Add a file directly from the chat screen without leaving the conversation |
+| **Upload a document** link | Add a file directly from the chat screen without leaving the conversation. This document is scoped to the current thread only — see [Edge Cases and Limits](#edge-cases-and-limits) |
 | **Attachment / code / text icons** | Attach files, code snippets, or formatted text to your message |
 | **Voice input (mic icon)** | Send a message using speech instead of typing — available if Speech-to-Text was configured for the workspace |
 
@@ -49,3 +49,4 @@ The exact commands available depend on which agent is selected and what skills i
 - Every workspace must have at least one agent attached at creation, so this shouldn't come up for a normally-created workspace. However, if all attached agents are later removed via **Workspace Settings → Agents & workflows**, chat may not be able to generate a meaningful response until a new agent is attached.
 - Very large or unsupported document types may fail to parse; see [Document Upload](./document-upload.md) for supported formats and limits.
 - Switching agents mid-thread may change the tone or accuracy of responses, since different agents can be configured with different instructions or data access.
+- **A document uploaded directly within a thread is only accessible within that thread** — it doesn't carry over to other threads in the same workspace. If you need a document available across multiple threads or conversations, add it through [Document Upload](./document-upload.md) so it's attached at the workspace level instead.
