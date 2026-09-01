@@ -10,7 +10,7 @@ Everything below covers how to find your existing workspaces, create a new one, 
 
 All your workspaces live on the **Workspaces** page, accessible from the left-hand navigation.
 
-![Workspaces list](./assets/workspaces-list-grid.png)
+![Workspaces list](../assets/workspaces-list-grid.png)
 
 Each workspace is shown as a card (or a row, if you switch to list view) with a quick summary:
 
@@ -30,7 +30,7 @@ You can:
 - **Filter** workspaces using tags like Industry, Department, Use Case, Region, Priority, and more (see [Managing Members and Metadata](#organizing-workspaces-with-tags) below)
 - Click **Launch** on any workspace to open its chat interface, or use the **⋮** menu for quick actions — **Upload** (jumps straight to [Document Upload](./document-upload.md)) and **Settings** (opens [Workspace Settings](./workspace-settings.md)) — without launching the full chat view first
 
-![Quick actions on a workspace card](./assets/workspaces-list-quick-actions.png)
+![Quick actions on a workspace card](../assets/workspaces-list-quick-actions.png)
 
 ---
 
@@ -40,13 +40,13 @@ Click **+ Create Workspace** on the Workspaces page. You'll go through a short, 
 
 ### Step 1: General Details
 
-![General Details step](./assets/create-step1-general-details.png)
+![General Details step](../assets/create-step1-general-details.png)
 
 Give your workspace a **name** and a short **description**. This is the only required step — everything else can be filled in later.
 
 ### Step 2: Business Info
 
-![Business Info step](./assets/create-step2-business-info.png)
+![Business Info step](../assets/create-step2-business-info.png)
 
 Tag your workspace with business context so it's easy to find and report on later. All fields here are optional:
 
@@ -58,11 +58,11 @@ Tag your workspace with business context so it's easy to find and report on late
 
 > **Tip:** If the option you need isn't in a dropdown, click **Add option** to create a new one. New options become available to everyone creating workspaces going forward.
 
-![Adding a custom Industry option](./assets/create-step2-industry-options.png)
+![Adding a custom Industry option](../assets/create-step2-industry-options.png)
 
 ### Step 3: Workspace Configuration
 
-![Workspace Configuration step](./assets/create-step3-workspace-configuration.png)
+![Workspace Configuration step](../assets/create-step3-workspace-configuration.png)
 
 This is where you choose the technical engines behind your workspace:
 
@@ -70,17 +70,17 @@ This is where you choose the technical engines behind your workspace:
 - **Embedder Configuration** — the model that converts your documents into a format the AI can understand
 - **Parser Configuration** — the tool that reads and extracts text from uploaded files (e.g. PDFs, scanned documents)
 
-If you're not sure what to pick, use the default option — an admin can change this later. See [Integrations](./integrations.md) for what each option means.
+If you're not sure what to pick, use the default option — an admin can change this later. See [Integrations](../integrations.md) for what each option means.
 
 ### Step 4: Documents
 
-![Documents step](./assets/create-step4-documents.png)
+![Documents step](../assets/create-step4-documents.png)
 
-Optionally connect a document source right away — for example, a SharePoint or S3-type storage connector — so your workspace starts populated with existing files. You can also skip this and [upload documents directly](./document-upload.md) later.
+Optionally connect a document source right away — for example, a SharePoint or S3-type storage connector — so your workspace starts populated with existing files. You can also skip this and [upload documents directly](../document-upload.md) later.
 
 ### Step 5: Agents
 
-![Agents step](./assets/create-step5-agents.png)
+![Agents step](../assets/create-step5-agents.png)
 
 Attach one or more existing AI **agents** to this workspace. Agents are what your workspace's chat will use to answer questions and take actions. You can search and multi-select from all agents available to you.
 
@@ -88,25 +88,25 @@ Attach one or more existing AI **agents** to this workspace. Agents are what you
 
 ### Step 6: Workflows
 
-![Workflows step](./assets/create-step6-workflows.png)
+![Workflows step](../assets/create-step6-workflows.png)
 
 Attach existing automated **workflows** to the workspace by searching and selecting from the dropdown, the same way you attach agents. Workflows let the workspace trigger multi-step automated processes rather than a single agent response. This step is optional — skip it if the workspace doesn't need automated workflows.
 
 ### Step 7: Users
 
-![Users step](./assets/create-step7-users.png)
+![Users step](../assets/create-step7-users.png)
 
 Add the people who should have access to this workspace. Search by username or email, select them, and click **Add to workspace**. You can assign roles (like **Admin** or **Member**) to control what each person can do — see [Managing Members](#managing-members) below.
 
 ### Step 8: Dashboard
 
-![Dashboard step with Power BI](./assets/create-step8-dashboard-powerbi.png)
+![Dashboard step with Power BI](../assets/create-step8-dashboard-powerbi.png)
 
 If your team uses **Power BI**, you can embed specific dashboards and reports directly into the workspace for quick reference. This step is entirely optional — skip it if you don't need embedded analytics.
 
 ### Step 9: Others
 
-![Others step](./assets/create-step9-others.png)
+![Others step](../assets/create-step9-others.png)
 
 Configure voice-related capabilities for the workspace:
 

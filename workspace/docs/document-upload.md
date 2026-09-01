@@ -20,11 +20,11 @@ Use the Documents page whenever you want to:
 - From the **Workspaces** list, click the **⋮** menu on any workspace card and select **Upload**.
 - From inside a workspace's chat, click the **upload a document** link.
 
-![Quick actions on the Workspaces list](./assets/workspaces-list-quick-actions.png)
+![Quick actions on the Workspaces list](../assets/workspaces-list-quick-actions.png)
 
 ## The Documents Screen
 
-![Document manager UI](./assets/document-upload-manager.png)
+![Document manager UI](../assets/document-upload-manager.png)
 
 The Documents page is split into two panels:
 
@@ -67,7 +67,7 @@ AgentWorX supports a broad range of file types, grouped by how the content gets 
 |---|---|
 | **Folder structure** | Documents can be nested into folders both in the shared library and within a workspace, for easier organization |
 | **Parser** | The document parser configured for the workspace (see [Workspace Configuration](./creating-and-managing.md#step-3-workspace-configuration)) determines how text is extracted from text-based and Office documents, and powers OCR for image files |
-| **Transcription Configuration** | Audio files (`.mp3`, `.wav`, `.mp4`, `.mpeg`, `.m4a`) are converted to text using the workspace's transcription setup (see [Step 9: Others](./creating-and-managing.md#step-9-others)) before they can be used for grounding |
+| **Transcription Configuration** | Audio files (`.mp3`, `.wav`, `.mp4`, `.mpeg`, `.m4a`) are converted to text using the workspace's transcription setup (see [Step 9: Others](../creating-and-managing.md#step-9-others)) before they can be used for grounding |
 | **Personal SharePoint** | If enabled by an admin in [Workspace Settings](./workspace-settings.md), members can connect their own Microsoft account and pull files directly from their personal SharePoint on this same upload page |
 
 ## Expected Outputs

@@ -2,7 +2,7 @@
 
 Workspace Chat is where you actually interact with your workspace — asking questions, uploading documents on the fly, referencing your documents, and getting answers from the agents attached to that workspace. You can also switch AI models mid-conversation without losing your thread's context.
 
-![Workspace chat view](./assets/workspace-chat-launched.png)
+![Workspace chat view](../assets/workspace-chat-launched.png)
 
 ## Short Description
 

@@ -21,7 +21,7 @@ Use Workspace Settings when you need to:
 
 ## The Settings Screen
 
-![Workspace Settings modal](./assets/workspace-settings-modal.png)
+![Workspace Settings modal](../assets/workspace-settings-modal.png)
 
 Settings open as a modal over the workspace, organized into the following tabs:
 
