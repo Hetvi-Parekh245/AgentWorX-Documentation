@@ -2,7 +2,7 @@
 
 Workspace Chat is where you actually interact with your workspace — asking questions, uploading documents on the fly, referencing your documents, and getting answers from the agents attached to that workspace. You can also switch AI models mid-conversation without losing your thread's context.
 
-![Workspace chat view](./assets/workspace-chat-launched.png)
+![Workspace chat view](../assets/workspace-chat-launched.png)
 
 ## Short Description
 
@@ -16,6 +16,7 @@ Use Workspace Chat whenever you need to:
 - Get help from an AI agent scoped to a specific business context (e.g. "CompanyResearchAgent" inside a "CompanyResearchWorkspace")
 - Upload a document and immediately start asking questions about it
 - Keep separate conversations organized as distinct threads, rather than one long chat
+- View an attached Power BI dashboard alongside your conversation
 
 ## Configuration Options
 
@@ -38,6 +39,23 @@ Typing `/` inside the chat box lets you invoke specific agent skills directly, i
 
 The exact commands available depend on which agent is selected and what skills it has been configured with — type `/` in the chat box to see the list of commands available for the current agent.
 
+## Viewing Dashboards in Chat
+
+If a workspace has Power BI dashboards attached (see [Step 8: Dashboard](./creating-and-managing.md#step-8-dashboard)), you can view them side by side with chat by clicking the **Dashboard** button in the top-right of the chat screen.
+
+![Dashboard panel alongside chat](../assets/workspace-chat-dashboard-panel.png)
+
+This opens a split view with:
+
+| Element | What it does |
+|---|---|
+| **Dashboard selector** (top right of panel) | Switch between different Power BI dashboards attached to the workspace |
+| **Pages pane** | Navigate between the report pages within the selected dashboard (e.g. "Financial Performance", "Risk Analysis") — can be collapsed with **Hide the Pages pane** for more screen space |
+| **Fullscreen / close icons** | Expand the dashboard panel or close it and return to chat-only view |
+| **Zoom controls** | Adjust the dashboard's zoom level independently of the chat panel |
+
+> **Important: attaching a dashboard and giving an agent access to that dashboard's data are two separate, independent things.** Attaching a Power BI dashboard to a workspace only makes it *viewable* in the chat panel — it does not automatically let an agent answer questions about the numbers shown on it. For an agent to reason about a dashboard's underlying data, the **specific data source** feeding that dashboard must be separately connected to the agent (via [Data Source](../data-source/overview.md) configuration). Without that connection, the agent will say it can't find the relevant data — even while the dashboard is visibly displaying it right next to the chat.
+
 ## Expected Outputs
 
 - A conversational response from the selected agent, grounded in the documents and configuration of that workspace
@@ -50,3 +68,4 @@ The exact commands available depend on which agent is selected and what skills i
 - Very large or unsupported document types may fail to parse; see [Document Upload](./document-upload.md) for supported formats and limits.
 - Switching agents mid-thread may change the tone or accuracy of responses, since different agents can be configured with different instructions or data access.
 - **A document uploaded directly within a thread is only accessible within that thread** — it doesn't carry over to other threads in the same workspace. If you need a document available across multiple threads or conversations, add it through [Document Upload](./document-upload.md) so it's attached at the workspace level instead.
+- **A visible dashboard doesn't mean the agent can answer questions about it.** Dashboard attachment (display) and an agent's data source access (reasoning) are configured independently — see [Viewing Dashboards in Chat](#viewing-dashboards-in-chat). If an agent says it can't find data that's clearly shown on the dashboard next to it, the agent likely hasn't been connected to that dashboard's underlying data source yet.
